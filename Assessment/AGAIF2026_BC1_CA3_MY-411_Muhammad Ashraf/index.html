@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASEAN GeoAI Interactive Web Map Explorer | Muhammad Ashraf (MY-411)</title>
+  
+  <!-- Local Standalone Leaflet CSS -->
+  <link rel="stylesheet" href="lib/leaflet.css"/>
+  
+  <!-- Application CSS -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Top Header Navigation Bar -->
+  <header class="app-header">
+    <div class="header-brand">
+      <div class="brand-logo">🌏</div>
+      <div class="brand-text">
+        <h1>ASEAN GeoAI Interactive Web Map</h1>
+        <p>Visualizing 230 Municipal Places & 10 Member Nations Across Southeast Asia</p>
+      </div>
+    </div>
+    
+    <div class="header-badge">
+      <div class="badge-icon">👤</div>
+      <div class="badge-info">
+        <span class="badge-name">Muhammad Ashraf</span>
+        <span class="badge-code">Ref Code: MY-411</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="app-container">
+    
+    <!-- Sidebar Control Panel -->
+    <aside class="sidebar">
+      
+      <!-- Stats Dashboard Grid -->
+      <section class="panel-section stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon icon-places">📍</div>
+          <div class="stat-content">
+            <span class="stat-value" id="stat-total-places">230</span>
+            <span class="stat-label">Total Places</span>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon icon-countries">🚩</div>
+          <div class="stat-content">
+            <span class="stat-value" id="stat-total-countries">10</span>
+            <span class="stat-label">ASEAN Nations</span>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon icon-filtered">🔍</div>
+          <div class="stat-content">
+            <span class="stat-value" id="stat-visible-places">230</span>
+            <span class="stat-label">Visible Places</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Search & Filter Controls -->
+      <section class="panel-section filter-panel">
+        <div class="section-header">
+          <h3>⚙ Filter & Search Data</h3>
+        </div>
+
+        <div class="form-group">
+          <label for="search-input">🔍 Search Place Name</label>
+          <div class="input-wrapper">
+            <input type="text" id="search-input" placeholder="Type city or place name (e.g. Jakarta, Penang)..." autocomplete="off">
+            <button id="clear-search-btn" class="btn-icon" title="Clear Search">✖</button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="country-select">🌐 Filter by Country</label>
+          <select id="country-select">
+            <option value="ALL">All ASEAN Nations (10)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="type-select">🏙 Filter by Settlement Type</label>
+          <select id="type-select">
+            <option value="ALL">All Settlement Types</option>
+          </select>
+        </div>
+
+        <div class="action-buttons">
+          <button id="reset-bounds-btn" class="btn btn-primary">⛶ Reset Map Extent</button>
+          <button id="reset-filters-btn" class="btn btn-secondary">↺ Reset Filters</button>
+        </div>
+      </section>
+
+      <!-- Map Legend Section -->
+      <section class="panel-section legend-panel">
+        <div class="section-header">
+          <h3>📍 Layer Legend</h3>
+        </div>
+
+        <div class="legend-items">
+          <div class="legend-item">
+            <span class="legend-marker marker-capital"></span>
+            <span class="legend-text">National Capitals / Major Cities</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-marker marker-city"></span>
+            <span class="legend-text">Cities & Towns</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-marker marker-other"></span>
+            <span class="legend-text">Other Municipal Settlements</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-boundary"></span>
+            <span class="legend-text">ASEAN Country Boundaries</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Attribution -->
+      <footer class="sidebar-footer">
+        <p>💻 Developed for Certified Assessment 3 (CA3)</p>
+        <p class="attribution-text">Powered by Leaflet.js | OpenStreetMap | CartoDB | ASEAN Shp Data</p>
+      </footer>
+    </aside>
+
+    <!-- Leaflet Map Container -->
+    <div id="map" class="map-view"></div>
+    
+  </main>
+
+  <!-- Embedded Datasets JS -->
+  <script src="data/asean_data.js"></script>
+  
+  <!-- Local Standalone Leaflet JS -->
+  <script src="lib/leaflet.js"></script>
+  
+  <!-- Application JS -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -17,8 +17,13 @@ __pycache__/
 .vscode/
 .DS_Store
 
-# Ignore non-backend folders
+# Ignore non-backend folders and old specification docs
 Assessment/
+ARCHITECTURE.md
+CONNECTIVITY_MVP_IMPLEMENTATION_TRACKER.md
+JEJAK_BACKEND_ONBOARDING_GUIDE.md
+JEJAK_MVP_IDEA_2.md
+mobile_plan_handoff_contract.md
 
 # OS
 Thumbs.db

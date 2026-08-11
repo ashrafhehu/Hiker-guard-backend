@@ -1,4 +1,4 @@
-# Virtual Environment
+# Virtual Environment & Local Files
 backend/venv/
 backend/.venv/
 venv/
@@ -16,6 +16,9 @@ __pycache__/
 .idea/
 .vscode/
 .DS_Store
+
+# Ignore non-backend folders
+Assessment/
 
 # OS
 Thumbs.db

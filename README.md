@@ -6,8 +6,9 @@
 
 Official **Application Backend** for the **JEJAK (HikerGuard GeoAI Mobile)** hiking safety decision-support system.
 
-- **GitHub Repository:** [ashrafhehu/Hiker-guard-backend](https://github.com/ashrafhehu/Hiker-guard-backend)
+- **GitHub Repository:** [ashrafhehu/JEJAK-backend](https://github.com/ashrafhehu/JEJAK-backend)
 - **Developer Handbook:** See [BACKEND_TEAM_HANDBOOK.md](BACKEND_TEAM_HANDBOOK.md) for complete architecture, API contracts, and database schema documentation.
+
 
 ---
 

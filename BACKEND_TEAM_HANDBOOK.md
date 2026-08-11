@@ -1,8 +1,9 @@
 # JEJAK Backend Developer Handbook & System Architecture
 
 > **Project Name:** HikerGuard-GeoAI Backend (JEJAK Application Backend)  
-> **Repository:** [JatoKing/HikerGuard-GeoAI-Mobile / ashrafhehu/Hiker-guard-backend](https://github.com/ashrafhehu/Hiker-guard-backend)  
+> **Repository:** [ashrafhehu/JEJAK-backend](https://github.com/ashrafhehu/JEJAK-backend)  
 > **Tech Stack:** Python 3.10+ | FastAPI | SQLAlchemy | Pydantic v2 | SQLite / PostgreSQL | Pytest  
+
 > **Last Updated:** August 2026
 
 ---
